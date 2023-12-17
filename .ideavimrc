@@ -10,6 +10,7 @@ set easymotion
 set textobj-entire
 set ReplaceWithRegister
 set which-key
+set multicursor
 """ Plugin settings -------------------------
 let g:argtextobj_pairs="[:],(:),<:>"
 let g:WhichKeyDesc_windows        = "<Space>w  Windows"
@@ -22,6 +23,8 @@ set so=5
 set incsearch
 set nu
 set timeoutlen=5000
+set relativenumber
+
 """ Idea specific settings ------------------
 set ideajoin
 set ideastatusicon=gray
