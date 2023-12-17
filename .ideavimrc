@@ -1,0 +1,78 @@
+""" Map leader to space ---------------------
+let mapleader=" "
+
+""" Plugins  --------------------------------
+set surround
+set multiple-cursors
+set commentary
+set argtextobj
+set easymotion
+set textobj-entire
+set ReplaceWithRegister
+set which-key
+""" Plugin settings -------------------------
+let g:argtextobj_pairs="[:],(:),<:>"
+let g:WhichKeyDesc_windows        = "<Space>w  Windows"
+let g:WhichKeyDesc_windows_delete = "<Space>wd delete"
+let g:WhichKeyDesc_windows_split  = "<Space>ws split below"
+
+""" Common settings -------------------------
+set showmode
+set so=5
+set incsearch
+set nu
+set timeoutlen=5000
+""" Idea specific settings ------------------
+set ideajoin
+set ideastatusicon=gray
+set idearefactormode=keep
+
+""" ideavim keymap handeler -----------------
+sethandler <C-1> a:vim
+sethandler <C-2> a:vim
+sethandler <C-S-2> a:vim
+sethandler <C-3> a:vim
+sethandler <C-4> a:vim
+sethandler <C-6> a:vim
+sethandler <C-S-6> a:vim
+sethandler <C-A> a:ide
+sethandler <C-B> a:ide
+sethandler <C-C> a:ide
+sethandler <C-D> a:vim
+sethandler <C-E> a:vim
+sethandler <C-F> a:ide
+sethandler <C-H> a:ide
+sethandler <C-J> a:vim
+sethandler <C-K> a:vim
+sethandler <C-M> a:vim
+sethandler <C-Q> a:vim
+sethandler <C-R> a:vim
+sethandler <C-S> a:ide
+sethandler <C-V> n-v:vim i:ide
+sethandler <C-W> a:vim
+sethandler <C-X> a:ide
+
+""" Mappings --------------------------------
+map <leader>d <Action>(Debug)
+map <leader>r <Action>(RenameElement)
+map <leader>c <Action>(Stop)
+map <leader>z <Action>(ToggleDistractionFreeMode)
+
+map <leader>a <Action>(Annotate)
+map <S-Space> <Action>(GotoNextError)
+
+map <leader>b <Action>(ToggleLineBreakpoint)
+map <leader>o <Action>(FileStructurePopup)o
+
+nmap <leader><C-1> :action SetHarpoon1<cr>
+nmap <leader><C-2> :action SetHarpoon2<cr>
+nmap <leader><C-3> :action SetHarpoon3<cr>
+nmap <leader><C-4> :action SetHarpoon4<cr>
+
+nmap <C-1> :action GotoHarpoon1<cr>
+nmap <C-2> :action GotoHarpoon2<cr>
+nmap <C-3> :action GotoHarpoon3<cr>
+nmap <C-4> :action GotoHarpoon4<cr>
+
+nmap <C-e> :action ShowHarpoon<cr>
+nmap <C-a> :action AddToHarpoon<cr>
