@@ -54,23 +54,23 @@ sethandler <C-S> a:ide
 sethandler <C-V> n-v:vim i:ide
 sethandler <C-W> a:vim
 sethandler <C-X> a:ide
+sethandler <C-N> a:vim
 
 """ Mappings --------------------------------
-map <leader>d <Action>(Debug)
+map <leader>d <Action>(DebugClass)
 map <leader>r <Action>(RenameElement)
 map <leader>c <Action>(Stop)
 map <leader>z <Action>(ToggleDistractionFreeMode)
-
+map <leader>rd <Action>(Rerun)|<Action>(Stop)
 map <leader>a <Action>(Annotate)
 map <S-Space> <Action>(GotoNextError)
-
 map <leader>b <Action>(ToggleLineBreakpoint)
 map <leader>o <Action>(FileStructurePopup)o
 
-nmap <leader><C-1> :action SetHarpoon1<cr>
-nmap <leader><C-2> :action SetHarpoon2<cr>
-nmap <leader><C-3> :action SetHarpoon3<cr>
-nmap <leader><C-4> :action SetHarpoon4<cr>
+nmap <leader><C-1>:action SetHarpoon1<cr>
+nmap <leader><C-2>:action SetHarpoon2<cr>
+nmap <leader><C-3>:action SetHarpoon3<cr>
+nmap <leader><C-4>:action SetHarpoon4<cr>
 
 nmap <C-1> :action GotoHarpoon1<cr>
 nmap <C-2> :action GotoHarpoon2<cr>
