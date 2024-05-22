@@ -9,8 +9,8 @@ set argtextobj
 set easymotion
 set textobj-entire
 set ReplaceWithRegister
-set which-key
 set multicursor
+set NERDTree
 """ Plugin settings -------------------------
 let g:argtextobj_pairs="[:],(:),<:>"
 let g:WhichKeyDesc_windows        = "<Space>w  Windows"
@@ -29,7 +29,6 @@ set relativenumber
 set ideajoin
 set ideastatusicon=gray
 set idearefactormode=keep
-
 """ ideavim keymap handeler -----------------
 sethandler <C-1> a:vim
 sethandler <C-2> a:vim
@@ -51,7 +50,8 @@ sethandler <C-M> a:vim
 sethandler <C-Q> a:vim
 sethandler <C-R> a:vim
 sethandler <C-S> a:ide
-sethandler <C-V> n-v:vim i:ide
+sethandler <C-C> a:ide
+sethandler <C-V> a:ide
 sethandler <C-W> a:vim
 sethandler <C-X> a:ide
 sethandler <C-N> a:vim
@@ -61,9 +61,10 @@ map <leader>d <Action>(DebugClass)
 map <leader>r <Action>(RenameElement)
 map <leader>c <Action>(Stop)
 map <leader>z <Action>(ToggleDistractionFreeMode)
-map <leader>rd <Action>(Rerun)|<Action>(Stop)
+
 map <leader>a <Action>(Annotate)
 map <S-Space> <Action>(GotoNextError)
+
 map <leader>b <Action>(ToggleLineBreakpoint)
 map <leader>o <Action>(FileStructurePopup)o
 
